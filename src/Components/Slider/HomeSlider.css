@@ -1,0 +1,119 @@
+.home-slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.slick-dots li button:before {
+    font-size: 15px !important;
+    color: wheat;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    margin: auto;
+  }
+  .slick-prev{
+    display: none !important;
+  }
+
+  .slick-dots{
+    width: 15%;
+    right: 50%;
+  }
+
+  .home-slider ul .slick-slider .slick-prev, .slick-next{
+    top: 100% ;
+    /* width: 40px; */
+  }
+  .slick-next{
+    right: 12%;
+  }
+
+  .slick-prev:before, .slick-next:before {
+    /* color: transparent; */
+    font-size: 40px;
+    color: wheat;
+  }
+
+.slider-left {
+    color: white;
+    /* padding: 0px 20px; */
+    width: 50%;
+    padding-left: 80px;
+}
+
+.slider-brand-name p{
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 25px;
+    font-weight: 300;
+    color: wheat;
+}
+
+.slider-detail p{
+    width: 60%;
+    margin: 0;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+/* .slider-bottom{
+    display: flex;
+    justify-content: end;
+} */
+.slider-price p{
+    margin: 0;
+    padding: 20px 0px;
+    color: wheat;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.slider-buttons {
+    /* width: 20%; */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.slider-buy {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: wheat;
+    color: white;
+    margin-right: 20px;
+}
+
+.slider-explore {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid wheat;
+    color: wheat;
+    background-color: transparent;
+}
+
+.slider-right {
+    width: 40%;
+    padding-right: 50px;
+}
+
+.home-design{
+    width: 400px;
+    height: 550px;
+    border-radius: 63% 37% 54% 45% / 65% 38% 62% 35%;
+}
+.home-design img{
+    object-fit: cover;
+    width: 400px;
+    height: 500px;
+    /* padding-right: 50px; */
+    border-radius: 63% 37% 54% 45% / 65% 38% 62% 35%;
+}

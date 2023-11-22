@@ -1,0 +1,105 @@
+.home-deals {
+    padding-bottom: 20px;
+    /* padding: 70px 30px; */
+    /* height: 100vh; */
+    display: grid;
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+    gap: 0.625rem;
+}
+
+.deals-boxbig-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(243, 241, 126);
+    height: 200px;
+    grid-column: span 5/span 5;
+    /* border: 1px solid gray; */
+}
+
+.deals-boxbig-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(244, 193, 92);
+    height: 200px;
+    grid-column: span 5/span 5;
+    /* border: 1px solid gray; */
+}
+
+.deals-boxbig-1 .dealsBox-right img,
+.deals-boxbig-2 .dealsBox-right img {
+    width: 40%;
+}
+
+.deals-box1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(134, 232, 230);
+    height: 200px;
+    grid-column: span 2/span 2;
+    /* border: 1px solid gray */
+}
+
+.deals-box2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(205, 239, 105);
+    height: 200px;
+    grid-column: span 2/span 2;
+    /* border: 1px solid gray */
+}
+
+.deals-box3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(240, 124, 124);
+    height: 200px;
+    grid-column: span 2/span 2;
+    /* border: 1px solid gray */
+}
+
+.deals-box4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(189, 174, 248);
+    height: 200px;
+    grid-column: span 2/span 2;
+    /* border: 1px solid gray */
+}
+
+.deals-boxbig-1 .dealsBox-right,
+.deals-boxbig-2 .dealsBox-right,
+.deals-box1 .dealsBox-right,
+.deals-box2 .dealsBox-right {
+    width: 40%;
+}
+
+.dealsBox-right h2 {
+    margin: 0;
+    padding: 5px;
+}
+
+.dealsBox-left {
+    width: 60%;
+}
+
+.dealsBox-left h2,
+.dealsBox-left p {
+    margin: 0;
+    padding: 5px;
+}
+
+.deals-box1 .dealsBox-right img,
+.deals-box2 .dealsBox-right img {
+    width: 70%;
+}
+
+.deals-box3 .dealsBox-right img,
+.deals-box4 .dealsBox-right img {
+    width: 50%;
+}
