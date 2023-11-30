@@ -6,8 +6,8 @@ import "./HomeCategory.css"
 import Slider from 'react-slick';
 
 const HomeCategory = (props) => {
-    const [categories, setCategories] = useState(Categories);
-    const [selectedCategory, setSelectedCategory] = useState(categories[2]);
+    // const [categories, setCategories] = useState(Categories);
+    const [selectedCategory, setSelectedCategory] = useState(Categories[2]);
 
     const handleCategoryClick = (item) => {
         setSelectedCategory(item);
@@ -21,6 +21,7 @@ const HomeCategory = (props) => {
             setSelectedSubcategory(selectedCategory.subCategories);
         }
     }, [selectedCategory]);
+    console.log(selectedSubcategory,"selected data")
 
     // slider
     const settings = {
@@ -37,7 +38,7 @@ const HomeCategory = (props) => {
     return (
         <div className="home-category-boxes">
             <ul className="home-category-left">
-                {categories.map((item) => (
+                {Categories.map((item) => (
                     <li key={item.id}
                         onClick={() => handleCategoryClick(item)}
                         className={item === selectedCategory ? 'selected' : ''}

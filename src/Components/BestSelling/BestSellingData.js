@@ -41,33 +41,33 @@ const BestSellingData =[
     },
     {
         id:6,
-        title:'Samsung Galaxy Book 3',
+        title:'Shakes',
         price:"456",
-        cover:"https://images.unsplash.com/photo-1522206052224-9c5ad951dd74?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        cover:"https://images.unsplash.com/photo-1481391032119-d89fee407e44?q=80&w=2865&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         description:'it is a best camera and performance phone',
         discout:'32'
     },
     {
         id:7,
-        title:'Samsung Galaxy Book 3',
+        title:'Burger',
         price:"456",
-        cover:"https://images.unsplash.com/photo-1522206052224-9c5ad951dd74?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        cover:"https://images.unsplash.com/photo-1609167921178-e295a98f808f?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         description:'it is a best camera and performance phone',
         discout:'32'
     },
     {
         id:8,
-        title:'Samsung Galaxy Book 3',
+        title:'Biscuits',
         price:"456",
-        cover:"https://images.unsplash.com/photo-1522206052224-9c5ad951dd74?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        cover:"https://images.unsplash.com/photo-1558961363-fa8fdf82db35?q=80&w=2865&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         description:'it is a best camera and performance phone',
         discout:'32'
     },
     {
         id:9,
-        title:'Samsung Galaxy Book 3',
+        title:'Cold Drinks',
         price:"456",
-        cover:"https://images.unsplash.com/photo-1522206052224-9c5ad951dd74?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        cover:"https://images.unsplash.com/photo-1568309344402-e55115e869fe?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         description:'it is a best camera and performance phone',
         discout:'32'
     },

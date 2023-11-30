@@ -1,0 +1,93 @@
+.footer{
+    background-color: #2c2f24;
+    padding: 0px 30px;
+    padding-top: 20px;
+    position: relative;
+    bottom: 0;
+}
+
+.footer-box {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 3rem;
+    /* align-items: center; */
+    justify-content: space-around;
+    padding: 30px 0px;
+    color: white;
+}
+
+.company-detail p {
+    padding: 10px 0px;
+    font-size: 1rem;
+}
+
+.footer-box ul {
+    padding-left: 5px;
+    color: white;
+}
+
+.footer-box ul li {
+    /* color: white; */
+    display: flex;
+    /* align-items: center; */
+}
+
+.footer-box ul li a {
+    color: white;
+}
+
+.company-icon {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.company-icon img {
+    display: flex;
+    padding-left: 20px;
+    position: relative;
+    top: 10px;
+    height: 50px;
+    width: 150px;
+}
+
+.footer-contactUs span {
+    padding-right: 10px;
+    font-size: 1.5rem;
+}
+.footer-contactUs span path{
+    fill: wheat;
+}
+
+.footer-contactUs p {
+    padding: 5px 0px;
+    padding-right: 10px;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.footer-contactUs ul h4,
+.footer-support ul h4,
+.footer-about ul h4 {
+    color: wheat;
+    margin: 0;
+    padding: 10px 0px;
+    font-size: 1.2rem;
+}
+
+.footer-support ul li,
+.footer-about ul li {
+    padding: 5px 0px;
+    font-size: 1rem;
+}
+
+.footer-copyright-box{
+    color: white;
+    border-top: 1px solid gray;
+    /* display: flex; */
+    text-align: center;
+}
+.footer-copyright-box p{
+   margin: 0;
+   padding: 20px 0px;
+}

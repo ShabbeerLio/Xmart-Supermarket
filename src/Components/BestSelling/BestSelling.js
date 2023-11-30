@@ -15,7 +15,7 @@ const BestSelling = () => {
             <div className="bestselling-box-detail">
               <h3>{item.title}</h3>
               <p>{item.description}</p>
-              <h4>${item.price}</h4>
+              <h4>${(item.price-(item.price/100)*10).toFixed(2)}</h4>
             </div>
           </div>
         </>

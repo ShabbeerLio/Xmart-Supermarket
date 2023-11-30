@@ -4,6 +4,7 @@ import './App.css';
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Pages/Home/Home';
 import Products from "./Pages/Products/Products";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Products />
           </Route>
         </Switch>
+        <Footer/>
       </Router>
       {/* new project begin here....... */}
     </>

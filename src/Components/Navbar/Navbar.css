@@ -1,11 +1,13 @@
 .nav-mainBox {
-    /* margin: 0px 50px; */
-    padding: 0px 50px;
     background-color: #2c2f24;
-
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
 }
 
 .nav-main {
+    padding: 0px 10px;
     display: flex;
     align-items: baseline;
     color: white;

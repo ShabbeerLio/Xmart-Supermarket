@@ -10,11 +10,6 @@ const Navbar = (props) => {
                 <div className="nav-icon">
                     <Link to='/'>
                         <img src={Logo} alt="" />
-                        {/* <span>X</span>
-                        <p>
-                            MART SUPERMARKET
-                        </p> */}
-
                     </Link>
                 </div>
                 <div className="nav-search">

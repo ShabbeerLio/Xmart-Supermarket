@@ -17,9 +17,19 @@
     flex-direction: column;
     padding: 1rem;
     justify-content: space-between;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(249 249 249);
     border-radius: 15px;
+    background-color: rgb(249 249 249);
+    cursor: pointer;
 }
+.featured-box-item:hover {
+    transform: scale(1.01);
+    --tw-shadow: 0 2px 4px rgba(0, 0, 0, .08);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+        var(--tw-ring-shadow, 0 0 #0000),
+        var(--tw-shadow);
+}
+
 .featured-box-item span{
     position: absolute;
     padding: 5px 10px;
@@ -33,13 +43,17 @@
 .featured-box-item img {
     border-radius: 15px;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
+    height: 250px;
     object-fit: cover;
 }
 
 .featured-box-item:first-child {
     grid-column: span 2;
     grid-row: span 2;
+}
+.featured-box-item:first-child img{
+    height: 100% !important;
 }
 
 .featured-box-detail {
@@ -51,18 +65,30 @@
     margin: 0;
     padding: 10px 0px;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .featured-box-detail h4 {
     margin: 0;
     padding: 5px 0px;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 1.2rem;
+}
+.featured-box-detail h4 del{
+    padding-left: 10px;
+    color: gray;
+    font-size: 0.9rem;
 }
 
 .featured-box-detail p {
+    color: gray;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     margin: 0;
     padding: 5px 0px;
-    font-size: 18px;
+    font-size: 0.8rem;
 }

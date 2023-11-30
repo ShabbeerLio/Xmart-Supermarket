@@ -1,12 +1,14 @@
 import React from 'react'
 import "./Home.css"
 import HomeSlider from '../../Components/Slider/HomeSlider'
-import FlashDeals from '../FlashDeals/FlashDeals'
+import FlashDeals from '../../Components/FlashDeals/FlashDeals'
 import HomeCategory from '../../Components/Categories/HomeCategory'
 import FeaturedProducts from '../../Components/FeaturedProducts/FeaturedProducts'
 import TopBrands from '../../Components/TopBrands/TopBrands'
 import BestSelling from '../../Components/BestSelling/BestSelling'
 import NewArrivel from '../../Components/NewArrivels/NewArrivel'
+import OffersBanners from '../../Components/OfferBanners/OffersBanners'
+import Footer from '../../Components/Footer/Footer'
 
 const Home = () => {
     // const categoryData = useState(Categories)
@@ -31,33 +33,36 @@ const Home = () => {
                 </div>
                 <HomeCategory />
             </div>
+            <div className="offer-banners">
+                <OffersBanners/>
+            </div>
             <div className="featured-products">
                 <div className="featured-products-title">
                     <h1>Featured</h1>
                     <p>Products</p>
                 </div>
-                <FeaturedProducts/>
+                <FeaturedProducts />
             </div>
             <div className="top-brands">
                 <div className="top-brands-title">
                     <h1>Top</h1>
                     <p>Brands</p>
                 </div>
-                <TopBrands/>
+                <TopBrands />
             </div>
             <div className="bestSelling-products">
                 <div className="bestSelling-products-title">
                     <h1>Best Selling</h1>
                     <p>Products</p>
                 </div>
-                <BestSelling/>
+                <BestSelling />
             </div>
             <div className="new-arrivels">
                 <div className="new-arrivels-title">
                     <h1>New</h1>
                     <p>Arrivels</p>
                 </div>
-                <NewArrivel/>
+                <NewArrivel />
             </div>
         </>
     )
