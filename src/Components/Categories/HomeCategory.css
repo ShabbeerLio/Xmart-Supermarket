@@ -64,6 +64,10 @@
     left: -50px;
     display: block !important;
 }
+.home-category-right ul .slick-next {
+    /* left: -50px; */
+    display: block !important;
+}
 
 .home-category-right ul .slick-slider .slick-dots {
     width: 0%;

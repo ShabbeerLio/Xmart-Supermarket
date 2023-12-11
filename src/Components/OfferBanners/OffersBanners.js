@@ -1,7 +1,7 @@
 import React from 'react'
 import "./OffersBanners.css"
 import Slider from 'react-slick'
-import TopBrandsData from '../TopBrands/TopBrandsData'
+import TopBrandsData from '../Datas/TopBrandsData'
 
 const OffersBanners = () => {
 

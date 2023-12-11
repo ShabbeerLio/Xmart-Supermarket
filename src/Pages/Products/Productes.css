@@ -1,0 +1,148 @@
+.product-page {
+    display: flex;
+    margin-top: 70px;
+    padding: 2rem 2rem 5rem;
+}
+
+.category-box-filter {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 10px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.category-box-filter li {
+    padding: 5px 5px !important;
+
+}
+
+.category-box-filter li .filter-box {
+    display: flex;
+    margin: 0;
+    padding: 10px;
+    border: 1px solid rgb(160, 160, 160);
+    background-color: rgb(249 249 249);
+    border-radius: 10px;
+}
+
+.category-box-filter li .filter-box p {
+    color: black;
+    padding-right: 5px;
+    cursor: default;
+}
+
+.category-box-filter li .filter-box span {
+    color: black;
+    cursor: pointer;
+}
+
+.category-box {
+    padding: 0px 10px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.product-page-left .selected {
+    font-weight: bold;
+    color: #333;
+    font-size: 17px;
+}
+
+.product-page-left li {
+    /* cursor: pointer; */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+    color: rgba(106, 106, 106, 0.851);
+}
+
+.product-page-left h4 {
+    margin: 0;
+    /* padding: 10px 0px; */
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.product-page-left li p {
+    margin: 0;
+    cursor: pointer;
+}
+
+.product-page-left {
+    width: 20%;
+    padding: 0;
+    padding-right: 30px;
+    margin: 0;
+}
+
+.product-page-right {
+    width: 80%;
+}
+
+.product-number{
+    padding-right: 20px;
+}
+
+.product-page-sort {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+}
+
+.product-sort-dropdown {
+    position: relative;
+    width: 18%;
+}
+
+.product-sort {
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.product-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product-number p{
+    padding: 0px 3px;
+}
+
+.dropdown-options {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 90%;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 1;
+}
+
+.dropdown-options div {
+    cursor: pointer;
+    padding: 8px;
+}
+
+/* Add more styles as needed */
+
+
+.product-page-right ul {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+    padding: 0px;
+    margin: 0;
+}

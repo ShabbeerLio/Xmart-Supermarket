@@ -1,6 +1,6 @@
 import React from 'react'
 import "./TopBrands.css"
-import TopBrandsData from './TopBrandsData'
+import TopBrandsData from '../Datas/TopBrandsData'
 
 const TopBrands = () => {
     return (

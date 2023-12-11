@@ -6,13 +6,12 @@ import HomeCategory from '../../Components/Categories/HomeCategory'
 import FeaturedProducts from '../../Components/FeaturedProducts/FeaturedProducts'
 import TopBrands from '../../Components/TopBrands/TopBrands'
 import BestSelling from '../../Components/BestSelling/BestSelling'
-import NewArrivel from '../../Components/NewArrivels/NewArrivel'
 import OffersBanners from '../../Components/OfferBanners/OffersBanners'
-import Footer from '../../Components/Footer/Footer'
+import BestSellingData from '../../Components/BestSelling/BestSellingData'
+import ProductCard from '../../Components/ProductCard/ProductCard'
+import FeaturedProductsData from '../../Components/Datas/FeaturedProductsData'
 
 const Home = () => {
-    // const categoryData = useState(Categories)
-    // console.log(categoryData, 'data')
 
     return (
         <>
@@ -34,14 +33,27 @@ const Home = () => {
                 <HomeCategory />
             </div>
             <div className="offer-banners">
-                <OffersBanners/>
+                <OffersBanners />
             </div>
             <div className="featured-products">
                 <div className="featured-products-title">
                     <h1>Featured</h1>
                     <p>Products</p>
                 </div>
-                <FeaturedProducts />
+                <div className='featured-product-box'>
+                    {FeaturedProductsData.map((item) => (
+                        <>
+                            <FeaturedProducts 
+                             key={item.id}
+                             id={item.id}
+                             cover={item.cover}
+                             discout={item.discout}
+                             name={item.title}
+                             price={item.price}
+                             description={item.description} />
+                        </>
+                    ))}
+                </div>
             </div>
             <div className="top-brands">
                 <div className="top-brands-title">
@@ -55,14 +67,39 @@ const Home = () => {
                     <h1>Best Selling</h1>
                     <p>Products</p>
                 </div>
-                <BestSelling />
+                <div className='bestselling-product-box'>
+                    {BestSellingData.map((item) => (
+                        <>
+                            <BestSelling
+                                key={item.id}
+                                id={item.id}
+                                cover={item.cover}
+                                name={item.title}
+                                price={item.price}
+                                description={item.description} />
+                        </>
+                    ))}
+                </div>
             </div>
             <div className="new-arrivels">
                 <div className="new-arrivels-title">
                     <h1>New</h1>
                     <p>Arrivels</p>
                 </div>
-                <NewArrivel />
+                <div className='newarrivel-product-box'>
+                    {BestSellingData.map((item) => (
+                        <>
+                            <ProductCard
+                                key={item.id}
+                                id={item.id}
+                                cover={item.cover}
+                                name={item.title}
+                                price={item.price}
+                                description={item.description}
+                            />
+                        </>
+                    ))}
+                </div>
             </div>
         </>
     )

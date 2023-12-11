@@ -1,4 +1,4 @@
-.OffersBanners-box .slick-prev,
+.OffersBanners-box ul .slick-prev,
 .slick-next {
   display: none !important;
 }
