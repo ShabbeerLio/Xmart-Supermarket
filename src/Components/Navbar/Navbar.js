@@ -51,7 +51,7 @@ const Navbar = (props) => {
       }, [cartRef]);
 
     return (
-        <div className="nav-mainBox">
+        <nav className="nav-mainBox">
             <div className='nav-main'>
                 <div className="nav-icon">
                     <Link to='/' onClick={scrollToTop}>
@@ -125,7 +125,7 @@ const Navbar = (props) => {
                     </>
                 )}
             </div>
-        </div>
+        </nav>
     )
 }
 

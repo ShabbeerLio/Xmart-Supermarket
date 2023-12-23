@@ -117,17 +117,39 @@ const Products = (props) => {
               onClick={() => handleBrandClick(item.brand)}
               className={selectedBrands.includes(item.brand) ? 'selected' : ''}
             >
-              {item.brand}
+              <p>
+                {item.brand}
+              </p>
             </li>
           ))}
         </div>
         <h4>Price</h4>
         <div className='category-box'>
-          <li onClick={() => handlePriceClick({ min: 0, max: 100 })} className={selectedPrice && selectedPrice.min === 0 && selectedPrice.max === 100 ? 'selected' : ''}>Below $100</li>
-          <li onClick={() => handlePriceClick({ min: 300, max: 400 })} className={selectedPrice && selectedPrice.min === 300 && selectedPrice.max === 400 ? 'selected' : ''}>$300 - $400</li>
-          <li onClick={() => handlePriceClick({ min: 400, max: 700 })} className={selectedPrice && selectedPrice.min === 400 && selectedPrice.max === 700 ? 'selected' : ''}>$400 - $700</li>
-          <li onClick={() => handlePriceClick({ min: 700, max: 999 })} className={selectedPrice && selectedPrice.min === 700 && selectedPrice.max === 999 ? 'selected' : ''}>$700 - $999</li>
-          <li onClick={() => handlePriceClick({ min: 1000, max: Infinity })} className={selectedPrice && selectedPrice.min === 1000 && selectedPrice.max === Infinity ? 'selected' : ''}>Above $1000</li>
+          <li onClick={() => handlePriceClick({ min: 0, max: 100 })} className={selectedPrice && selectedPrice.min === 0 && selectedPrice.max === 100 ? 'selected' : ''}>
+            <p>
+              Below $100
+            </p>
+          </li>
+          <li onClick={() => handlePriceClick({ min: 300, max: 400 })} className={selectedPrice && selectedPrice.min === 300 && selectedPrice.max === 400 ? 'selected' : ''}>
+            <p>
+              $300 - $400
+            </p>
+          </li>
+          <li onClick={() => handlePriceClick({ min: 400, max: 700 })} className={selectedPrice && selectedPrice.min === 400 && selectedPrice.max === 700 ? 'selected' : ''}>
+            <p>
+              $400 - $700
+            </p>
+          </li>
+          <li onClick={() => handlePriceClick({ min: 700, max: 999 })} className={selectedPrice && selectedPrice.min === 700 && selectedPrice.max === 999 ? 'selected' : ''}>
+            <p>
+              $700 - $999
+            </p>
+          </li>
+          <li onClick={() => handlePriceClick({ min: 1000, max: Infinity })} className={selectedPrice && selectedPrice.min === 1000 && selectedPrice.max === Infinity ? 'selected' : ''}>
+            <p>
+              Above $1000
+            </p>
+          </li>
         </div>
       </ul>
       {selectedSubcategories.length > 0 ? (

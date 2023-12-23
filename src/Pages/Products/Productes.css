@@ -136,8 +136,6 @@
     padding: 8px;
 }
 
-/* Add more styles as needed */
-
 
 .product-page-right ul {
     display: grid;
@@ -145,4 +143,10 @@
     gap: 1rem;
     padding: 0px;
     margin: 0;
+}
+
+.no-products-found{
+    position: absolute;
+    left: 50%;
+    top: 50%;
 }

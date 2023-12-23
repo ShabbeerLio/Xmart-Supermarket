@@ -1,0 +1,100 @@
+.Address{
+    border: 1px solid rgb(237, 236, 236);
+    border-radius: 10px;
+    padding: 1rem 1rem 0;
+}
+
+.Address-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Address-title h3{
+    font-family: system-ui;
+    font-size: 20px;
+    margin: 0;
+}
+
+.Address-title-buttons{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    background-color: #2c2f24;
+    border-radius: 8px;
+    padding: 10px;
+}
+.Address-title-buttons p{
+    margin: 0;
+    padding: 10px;
+    color: wheat !important;
+}
+
+.Address h5{
+    color: black;
+    margin: 0;
+    padding: 20px 0px 5px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.profile-address-box{
+    padding: 1rem;
+    border-top: 1px solid rgb(237, 236, 236);
+}
+
+.profile-address-box-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-address-box-head h3{
+    margin: 0;
+    padding-bottom: 15px;
+}
+.profile-address-box-head h3:last-child{
+    background-color:#2c2f24 ;
+    border-radius: 8px;
+    color: wheat;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.profile-address-box-body p{
+    margin: 0;
+    padding: 5px 0px;
+}
+.profile-address-box-body p:last-child{
+    margin: 0;
+    padding: 10px 0px;
+}
+
+.profile-address-buttons{
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: #2c2f24;
+    margin-top: 10px;
+    width: 48%;
+}
+.profile-address-buttons p{
+    margin: 0;
+    color: wheat;
+    padding: 20px 10px;
+}
+
+.profile-address-buttons-views{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-address-buttons {
+    cursor: pointer;
+    display: none;
+}
+
+.profile-address-box:hover .profile-address-buttons {
+    display: flex; 
+}

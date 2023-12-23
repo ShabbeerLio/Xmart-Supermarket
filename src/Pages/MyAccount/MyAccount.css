@@ -1,18 +1,101 @@
-.myaccount{
+.myaccount {
     margin-top: 70px;
 }
 
 .myaccount-head {
-    padding: 1rem;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
+
+.myaccount-head-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: brightness(50%);
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.myaccount-head-title {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    color: #fff;
+}
+
+.myaccount-head-title h2 {
+    font-family: system-ui;
+    margin: 0;
+}
+
+.myaccount-head-title p {
+    font-family: fantasy;
+    font-size: 40px;
+    font-weight: 400;
+    margin: 0;
+    padding: 10px;
+    -webkit-text-stroke: thin;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 .myaccount-body {
     padding: 1rem;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
+    gap: 2rem;
 }
+
 .myaccount-body-left {
+    width: 25%;
+    padding-right: 4rem;
     padding: 10px;
 }
+
+.myaccount-body-left ul li {
+    display: flex;
+    padding: 1rem;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.myaccount-body-left ul li svg{
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+.myaccount-body-left .selected {
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: rgb(237, 236, 236);
+}
+
 .myaccount-body-right {
+    width: 65%;
     padding: 10px;
+}
+.myaccount-body-right h2{
+    text-align: center;
+    font-family: fantasy;
+    color: black;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0;
+    -webkit-text-stroke: thin;
+}
+
+.myaccount-body-right-items p {
+    color: gray;
 }
