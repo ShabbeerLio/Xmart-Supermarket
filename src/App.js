@@ -1,7 +1,7 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
-import './App.css';
-import Navbar from './Components/Navbar/Navbar';
-import Home from './Pages/Home/Home';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import "./App.css";
+import Navbar from "./Components/Navbar/Navbar";
+import Home from "./Pages/Home/Home";
 import Products from "./Pages/Products/Products";
 import Footer from "./Components/Footer/Footer";
 import ProductDetails from "./Pages/ProductDetails/ProductDetails";
@@ -13,26 +13,15 @@ function App() {
     <>
       <Router>
         <Navbar />
-        <Switch>
-          <Route path='/' exact>
-            <Home />
-          </Route>
-          <Route path='/products' exact>
-            <Products />
-          </Route>
-          <Route path='/products-details' exact>
-            <ProductDetails />
-          </Route>
-          <Route path='/my-account' exact>
-            <MyAccount />
-          </Route>
-          <Route path='/contact' exact>
-            <Contact />
-          </Route>
-        </Switch>
-        <Footer/>
+        <Routes>
+          <Route path="/" exact element={<Home />} />
+          <Route path="/products" exact element={<Products />} />
+          <Route path="/products-details" exact element={<ProductDetails />} />
+          <Route path="/my-account" exact element={<MyAccount />} />
+          <Route path="/contact" exact element={<Contact />} />
+        </Routes>
+        <Footer />
       </Router>
-      {/* new project begin here....... */}
     </>
   );
 }
