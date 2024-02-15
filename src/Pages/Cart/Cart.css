@@ -82,6 +82,10 @@
     margin-bottom: 10px;
 }
 
+.cart-box-items-boxs{
+    cursor: pointer;
+}
+
 .cart-box-img {
     display: flex;
     align-items: center;
@@ -115,7 +119,7 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     margin: 0;
-    padding: 5px 0px;
+    padding: 5px 7px;
     font-size: 0.8rem;
 }
 .cart-box-detail-inde{

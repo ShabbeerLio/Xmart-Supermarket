@@ -41,7 +41,7 @@ const FeaturedProducts = (props) => {
                 <img src={props.cover} alt="" />
             </div>
             <div className="featured-box-detail">
-                <h3>{props.title}</h3>
+                <h3>{props.name}</h3>
                 <p>{props.description}</p>
                 <h4>${(props.price - (props.price / 100) * (props.discout)).toFixed(2)}<del>${props.price}</del></h4>
             </div>

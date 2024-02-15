@@ -4,8 +4,20 @@ import { Link } from 'react-router-dom'
 import Logo from '../Assits/MART.png'
 import Cart from '../../Pages/Cart/Cart'
 import Wishlist from '../../Pages/Wishlist/Wishlist'
+import Contact from '../../Pages/Contact/Contact'
 
 const Navbar = (props) => {
+    const id = "blur"
+
+    //Contact us
+    const [contactOpen, setContactOpen] = useState(false);
+    const handleToggle = () => {
+        setContactOpen(!contactOpen)
+    };
+
+    const contactClose = () => {
+        setContactOpen(false)
+    }
 
     // cart
     const [isCartOpen, setIsCartOpen] = useState(false);
@@ -36,22 +48,22 @@ const Navbar = (props) => {
 
     useEffect(() => {
         const handleClickOutside = (event) => {
-          if (cartRef.current && !cartRef.current.contains(event.target) && event.target.closest('.cart-sidebar-box') === null) {
-            cartClose();
-          }
-          if (cartRef.current && !cartRef.current.contains(event.target) && event.target.closest('.wishlist-sidebar-box') === null) {
-            wishlistClose();
-          }
+            if (cartRef.current && !cartRef.current.contains(event.target) && event.target.closest('.cart-sidebar-box') === null) {
+                cartClose();
+            }
+            if (cartRef.current && !cartRef.current.contains(event.target) && event.target.closest('.wishlist-sidebar-box') === null) {
+                wishlistClose();
+            }
         };
-    
+
         document.addEventListener('mousedown', handleClickOutside);
         return () => {
-          document.removeEventListener('mousedown', handleClickOutside);
+            document.removeEventListener('mousedown', handleClickOutside);
         };
-      }, [cartRef]);
+    }, [cartRef]);
 
     return (
-        <nav className="nav-mainBox">
+        <nav className="nav-mainBox" >
             <div className='nav-main'>
                 <div className="nav-icon">
                     <Link to='/' onClick={scrollToTop}>
@@ -83,7 +95,7 @@ const Navbar = (props) => {
                             <Link to='/cart'onClick={scrollToTop} >Cart</Link>
                         </li> */}
                         <li>
-                            <Link to='/contact' onClick={scrollToTop} >Contact</Link>
+                            <p onClick={handleToggle} >Contact</p>
                         </li>
                     </ul>
                 </div>
@@ -122,6 +134,11 @@ const Navbar = (props) => {
                 {isWishlistOpen && (
                     <>
                         <Wishlist wishlistClose={wishlistClose} />
+                    </>
+                )}
+                {contactOpen && (
+                    <>
+                        <Contact contactClose={contactClose}/>
                     </>
                 )}
             </div>

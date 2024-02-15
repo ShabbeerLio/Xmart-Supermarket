@@ -2,29 +2,13 @@ import React, { useEffect, useRef, useState } from 'react'
 import "./Cart.css"
 import BestSellingData from '../../Components/BestSelling/BestSellingData'
 import ProductCardView from '../../Components/ProductCard/ProductCardView'
+import CartItems from './CartItems'
 
 const Cart = (props) => {
 
     const [cartItem, setCartItem] = useState([1])
-
-    const [quantity, setQuantity] = useState(1);
-
-    const handleIncrease = () => {
-        setQuantity(quantity + 1);
-    };
-
-    const handleDecrease = () => {
-        if (quantity > 1) {
-            setQuantity(quantity - 1);
-        }
-    };
-
     const [isCardOpen, setIsCardOpen] = useState(false);
     const productCardRef = useRef();
-
-    const handleCardClick = () => {
-        setIsCardOpen(!isCardOpen);
-    };
 
     const handleClickOutside = (event) => {
         if (
@@ -65,27 +49,13 @@ const Cart = (props) => {
                         <div className="cart-box-items" ref={productCardRef}>
                             {BestSellingData.slice(0, 4).map((item) => (
                                 <>
-                                    <div className={`cart-box-items-boxs${isCardOpen ? 'open' : ''}`}
+                                    <CartItems
                                         key={item.id}
-                                        onClick={handleCardClick}>
-                                        <div className="cart-box-items-box">
-                                            <div className="cart-box-img" >
-                                                <img src={item.cover} alt="" />
-                                            </div>
-                                            <div className="cart-box-detail">
-                                                <h3>{item.title}</h3>
-                                                <h3>${(item.price - (item.price / 100) * 10).toFixed(2)}</h3>
-                                                <div className="cart-box-detail-inde">
-                                                    <p onClick={handleDecrease}>-</p>
-                                                    <p>{quantity}</p>
-                                                    <p onClick={handleIncrease}>+</p>
-                                                </div>
-                                            </div>
-                                            <div className="cart-box-buttons" >
-                                                <p>X</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                                        id={item.id}
+                                        cover={item.cover}
+                                        name={item.title}
+                                        price={item.price}
+                                    />
                                 </>
                             ))}
                         </div>
