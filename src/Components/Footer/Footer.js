@@ -29,16 +29,16 @@ const Footer = () => {
                 <h2>About Us</h2>
                 <ul>
                   <li>
-                    <Link onClick={scrollTop} to="/">About Us</Link>
+                    <Link onClick={scrollTop} to="/about">About Us</Link>
                   </li>
                   <li>
-                    <Link onClick={scrollTop} to="/">Contact Us</Link>
+                    <Link onClick={scrollTop} to="/contact">Contact Us</Link>
                   </li>
                   <li>
-                    <Link onClick={scrollTop} to="/">FAQ</Link>
+                    <Link onClick={scrollTop} to="/faq">FAQ</Link>
                   </li>
                   <li>
-                    <Link onClick={scrollTop} to="/">Corporate & Bulk Purchasing</Link>
+                    <Link onClick={scrollTop} to="/contact">Corporate & Bulk Purchasing</Link>
                   </li>
                 </ul>
               </div>
@@ -54,16 +54,16 @@ const Footer = () => {
               {/* <h2>Quick Links</h2> */}
               <ul>
                 <li>
-                  <Link onClick={scrollTop} to="/pukhya">Help Center</Link>
+                  <Link onClick={scrollTop} to="/help">Help Center</Link>
                 </li>
                 <li>
-                  <Link onClick={scrollTop} to="/about">How to Buy</Link>
+                  <Link onClick={scrollTop} to="/help">How to Buy</Link>
                 </li>
                 <li>
-                  <Link onClick={scrollTop} to="/career">Track Your Order</Link>
+                  <Link onClick={scrollTop} to="/track-order">Track Your Order</Link>
                 </li>
                 <li>
-                  <Link onClick={scrollTop} to="/contact-us">Returns & Refunds</Link>
+                  <Link onClick={scrollTop} to="/return-refund">Returns & Refunds</Link>
                 </li>
               </ul>
             </div>
