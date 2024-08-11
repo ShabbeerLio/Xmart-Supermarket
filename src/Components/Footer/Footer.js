@@ -1,93 +1,95 @@
 import React from 'react'
 import "./Footer.css"
-import Logo from '../Assits/MART.png'
-import { Link } from 'react-router-dom'
-import ContactDetail from '../../Pages/Contact/ContactDetail'
+import Aboutimg from "../../Components/Assits/MART.png"
+import SocialMedia from '../SocialMedia/SocialMedia';
+import { Link } from 'react-router-dom';
+// import fimg from "../../Components/Assits/MART.png"
 
-const Footer = (props) => {
 
-  const scrollToTop = () => {
+const Footer = () => {
+
+  const scrollTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth'
-      /* you can also use 'auto' behaviour
-         in place of 'smooth' */
+      behavior: 'auto'
     });
   };
 
   return (
     <>
-      <div className="footer">
-        <div className='footer-box'>
-          <div className="company-name">
-            <div className="company-icon">
-              <Link to='/'>
-                <img src={Logo} alt="" />
+      <div className="Footer">
+        <div className="Footer-main">
+          <div className="footer-top">
+            <div className="footer-top-left">
+              <h2>Be the first to know.</h2>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis suscipit commodi tempora est quisquam pariatur sit, repudiandae nemo? Quam qui eos placeat sequi atque, provident excepturi veniam vel? Nisi, quaerat.</p>
+            </div>
+            <div className="footer-top-right">
+              <div className="footer-right-quick">
+                <h2>About Us</h2>
+                <ul>
+                  <li>
+                    <Link onClick={scrollTop} to="/">About Us</Link>
+                  </li>
+                  <li>
+                    <Link onClick={scrollTop} to="/">Contact Us</Link>
+                  </li>
+                  <li>
+                    <Link onClick={scrollTop} to="/">FAQ</Link>
+                  </li>
+                  <li>
+                    <Link onClick={scrollTop} to="/">Corporate & Bulk Purchasing</Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="footer-detail-box">
+            <div className="footer-left">
+              <Link onClick={scrollTop} to="/">
+                <img className="image2" src={Aboutimg} alt="" />
               </Link>
             </div>
-            <div className="company-detail">
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum veritatis maiores ab incidunt minima dolor amet rerum placeat explicabo ex qui laborum dicta officia tenetur minus, unde quae. Illo ratione voluptatibus dolorum aut hic fugit officiis animi voluptatem perspiciatis, aliquam, expedita cumque consequuntur! Voluptatem necessitatibus temporibus magni exercitationem dolore eligendi.</p>
+            <div className="footer-right-quick">
+              {/* <h2>Quick Links</h2> */}
+              <ul>
+                <li>
+                  <Link onClick={scrollTop} to="/pukhya">Help Center</Link>
+                </li>
+                <li>
+                  <Link onClick={scrollTop} to="/about">How to Buy</Link>
+                </li>
+                <li>
+                  <Link onClick={scrollTop} to="/career">Track Your Order</Link>
+                </li>
+                <li>
+                  <Link onClick={scrollTop} to="/contact-us">Returns & Refunds</Link>
+                </li>
+              </ul>
+            </div>
+            <div className="footer-social-media">
+              <SocialMedia />
             </div>
           </div>
-          <div className="footer-contactUs">
-            <ul>
-              <h4>Contact Us</h4>
-              <ContactDetail/>
-            </ul>
-          </div>
-          <div className="footer-support">
-            <ul>
-              <h4>Customer Support</h4>
-              <li>
-                <Link to="/helpCenter" onClick={scrollToTop} style={{ textDecoration: "none" }}>
-                  Help Center
-                </Link>
-              </li>
-              <li>
-                <Link to="/howToBuy" onClick={scrollToTop} style={{ textDecoration: "none" }}>
-                  How to Buy
-                </Link>
-              </li>
-              <li>
-                <Link to="/trackYourOrder" onClick={scrollToTop} style={{ textDecoration: "none" }}>
-                  Track Your Order
-                </Link>
-              </li>
-              <li>
-                <Link to="/corporate&bulkPurchasing" onClick={scrollToTop} style={{ textDecoration: "none" }}>
-                  Corporate & Bulk Purchasing
-                </Link>
-              </li>
-              <li>
-                <Link to="/returnAndRefundPolicy" onClick={scrollToTop} style={{ textDecoration: "none" }}>
-                  Returns & Refunds
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div className="footer-about">
-            <ul>
-              <h4>About Us</h4>
-              <li>
-                <Link to="/contact" onClick={scrollToTop} style={{ textDecoration: "none" }}>
-                  Contact us
-                </Link>
-              </li>
-              <li >
-                <Link to="/termsAndCondition" onClick={scrollToTop} style={{ textDecoration: "none" }}>
-                  Terms & Conditions
-                </Link>
-              </li>
-              <li>
-                <Link to="/privacyPolicy" onClick={scrollToTop} style={{ textDecoration: "none" }}>
-                  Privacy Policy
-                </Link>
-              </li>
-            </ul>
-          </div>
         </div>
-        <div className="footer-copyright-box">
-          <p>Copyright &copy; 2023 All rights reserved</p>
+        <div className="footer-down">
+          <div className="footer-copyright">
+            <p>© 2024 X-Mart Supermarket | All rights reserved</p>
+          </div>
+          <div className="footer-copyright-menu">
+            <ul>
+              <li>
+                <Link onClick={scrollTop} to="/">Disclaimers</Link>
+              </li>
+              <li>
+                <Link onClick={scrollTop} to="/">Terms & Condition</Link>
+              </li>
+              <li>
+                <Link onClick={scrollTop} to="/">Privacy Policy</Link>
+              </li>
+            </ul>
+          </div>
+
         </div>
       </div>
     </>

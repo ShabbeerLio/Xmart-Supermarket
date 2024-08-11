@@ -58,7 +58,7 @@
 }
 
 .wishlist-box-head p {
-    font-family: fantasy;
+    font-family: "Caveat", cursive;
     padding-top: 10px;
     padding-left: 5px;
     font-size: 25px;
@@ -139,7 +139,7 @@
 .wishlist-box-buttons p {
     margin: 10px;
     /* padding: 10px; */
-    font-family: fantasy;
+    font-family: "Caveat", cursive;
     cursor: pointer;
 }
 

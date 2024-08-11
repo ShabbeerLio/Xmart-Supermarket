@@ -206,7 +206,7 @@
     margin: 0;
 }
 .productDetail-down-detail-title p{
-    font-family: fantasy;
+    font-family: "Caveat", cursive;
     padding-left: 10px;
     font-size: 20px;
     font-weight: 400;
@@ -226,7 +226,7 @@
 }
 
 .productDetail-down-products-title p{
-    font-family: fantasy;
+    font-family: "Caveat", cursive;
     padding-left: 10px;
     font-size: 25px;
     font-weight: 400;
